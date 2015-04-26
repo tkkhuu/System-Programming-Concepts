@@ -1,3 +1,0 @@
-interface IContestant{
-  String listName();
-}
