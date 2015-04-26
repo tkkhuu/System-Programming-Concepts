@@ -1,0 +1,111 @@
+\section{mystring.c File Reference}
+\label{mystring_8c}\index{mystring.c@{mystring.c}}
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$time.h$>$}\par
+{\tt \#include \char`\"{}mystring.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+char $\ast$ \bf{mystrdup} (const char $\ast$src)
+\item 
+char $\ast$ \bf{mystrndup} (const char $\ast$src, size\_\-t num)
+\item 
+size\_\-t \bf{mystrlen} (const char $\ast$string)
+\item 
+char $\ast$ \bf{mystrcpy} (char $\ast$d, const char $\ast$s)
+\item 
+char $\ast$ \bf{mystrcat} (char $\ast$destination, const char $\ast$source)
+\item 
+char $\ast$ \bf{mystrncat} (char $\ast$destination, const char $\ast$source, size\_\-t num)
+\item 
+char $\ast$ \bf{mystrncpy} (char $\ast$destination, const char $\ast$source, size\_\-t num)
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{mystring.c@{mystring.c}!mystrcat@{mystrcat}}
+\index{mystrcat@{mystrcat}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrcat (char $\ast$ {\em destination}, const char $\ast$ {\em source})}\label{mystring_8c_7d6fc6523f6b6af2c4295c9c6b1bd78e}
+
+
+Append a C string to an assigned destination \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $\ast$destination}]Pointer to the destination array, which should contain a C string, and be large enough to contain the concatenated resulting string \item[{\em $\ast$source}]C string to be appended \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]d is returned \end{Desc}
+\index{mystring.c@{mystring.c}!mystrcpy@{mystrcpy}}
+\index{mystrcpy@{mystrcpy}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrcpy (char $\ast$ {\em d}, const char $\ast$ {\em s})}\label{mystring_8c_73d1b6d63115637abb80ccb5d32bec31}
+
+
+Copy a C string to an assigned destination \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $\ast$d}]Pointer to the destination array where the content is to be copied. \item[{\em $\ast$s}]C string to be copied \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]d is returned \end{Desc}
+\index{mystring.c@{mystring.c}!mystrdup@{mystrdup}}
+\index{mystrdup@{mystrdup}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrdup (const char $\ast$ {\em src})}\label{mystring_8c_148a52c665d88f52fb4995338a319d3c}
+
+
+Duplicates a C-style string. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em src}]Pointer to string to be copied \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to freshly-allocated string containing a duplicate of src or null if no memory is available \end{Desc}
+\index{mystring.c@{mystring.c}!mystrlen@{mystrlen}}
+\index{mystrlen@{mystrlen}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t mystrlen (const char $\ast$ {\em string})}\label{mystring_8c_024ec4fe2e0814f14c6e17b2c79f91e3}
+
+
+Measure the length of a string \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $\ast$string}]Pointer to string to be measured \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The length of the string \end{Desc}
+\index{mystring.c@{mystring.c}!mystrncat@{mystrncat}}
+\index{mystrncat@{mystrncat}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrncat (char $\ast$ {\em destination}, const char $\ast$ {\em source}, size\_\-t {\em num})}\label{mystring_8c_c2070ea5031f58dcfcc4320a1d6beb75}
+
+
+Append a C string to an assigned destination \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $\ast$destination}]Pointer to the destination array, which should contain a C string, and be large enough to contain the concatenated resulting string \item[{\em $\ast$source}]C string to be appended \item[{\em num}]The maximum number of elements to be appended \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]d is returned \end{Desc}
+\index{mystring.c@{mystring.c}!mystrncpy@{mystrncpy}}
+\index{mystrncpy@{mystrncpy}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrncpy (char $\ast$ {\em destination}, const char $\ast$ {\em source}, size\_\-t {\em num})}\label{mystring_8c_858f7c088b124224c6358aee22118bc9}
+
+
+Copy a C string to an assigned destination \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $\ast$destination}]Pointer to the destination array where the content is to be copied. \item[{\em $\ast$source}]C string to be copied \item[{\em num}]The maximum number of elements to be copied \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]d is returned \end{Desc}
+\index{mystring.c@{mystring.c}!mystrndup@{mystrndup}}
+\index{mystrndup@{mystrndup}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrndup (const char $\ast$ {\em src}, size\_\-t {\em num})}\label{mystring_8c_0a1018503560c08ec35bea7a562cb31c}
+
+
+Duplicates a C-style string. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em src}]Pointer to string to be copied \item[{\em num}]The maximum number of elements to be copied \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to freshly-allocated string containing a duplicate of src or null if no memory is available \end{Desc}
