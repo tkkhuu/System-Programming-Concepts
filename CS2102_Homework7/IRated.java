@@ -1,0 +1,3 @@
+interface IRated{
+  boolean highlyRated();
+}
