@@ -1,0 +1,4 @@
+Employee: Name = Harry Palmer, Salary = 5000, Department = Mechanical
+Employee: Name = Erik Grantby, Salary = 10000, Department = Computer Science
+Employee: Name = Tri, Salary = 20000, Department = Robotics
+Employee: Name = Jetro, Salary = 20000, Department = Electrical

@@ -1,0 +1,150 @@
+\section{struct.h File Reference}
+\label{struct_8h}\index{struct.h@{struct.h}}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \bf{\_\-Employee}
+\item 
+struct \bf{b\-Employee}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \bf{MAX\_\-EMPLOYEE}~5
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef \bf{\_\-Employee} \bf{Employee}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void \bf{print\-Employee} (\bf{Employee} $\ast$employee)
+\item 
+void \bf{output\-Employee} (FILE $\ast$stream, \bf{Employee} $\ast$employee)
+\item 
+\bf{Employee} $\ast$ \bf{create\-Employee} (int salary, char $\ast$name, char $\ast$dept)
+\item 
+\bf{Employee} $\ast$ \bf{get\-Employee\-Info} (int name\-Size, int dept\-Size, int sal\-Size)
+\item 
+int \bf{number\-Of\-Emp} ()
+\item 
+void \bf{write\-Emp\-Data\-To\-File} (FILE $\ast$stream, \bf{Employee} $\ast$employee)
+\item 
+\bf{Employee} $\ast$ \bf{employee\-Info} (FILE $\ast$data)
+\item 
+void \bf{read\-Emp\-From\-Bin} (int pathname)
+\item 
+void \bf{write\-Emp\-Data\-To\-Binary\-File} (int pathname, \bf{Employee} $\ast$employee)
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{struct.h@{struct.h}!MAX_EMPLOYEE@{MAX\_\-EMPLOYEE}}
+\index{MAX_EMPLOYEE@{MAX\_\-EMPLOYEE}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-EMPLOYEE~5}\label{struct_8h_ee0ebd40b7f91bd31a2fbe80930a8d51}
+
+
+
+
+\subsection{Typedef Documentation}
+\index{struct.h@{struct.h}!Employee@{Employee}}
+\index{Employee@{Employee}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef struct \bf{\_\-Employee} \bf{Employee}}\label{struct_8h_f86d012563975d4da5c22487e31948e2}
+
+
+
+
+\subsection{Function Documentation}
+\index{struct.h@{struct.h}!createEmployee@{createEmployee}}
+\index{createEmployee@{createEmployee}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee}$\ast$ create\-Employee (int {\em salary}, char $\ast$ {\em name}, char $\ast$ {\em dept})}\label{struct_8h_b14bf26660b983276c2788be527dd90d}
+
+
+Create a new Employee \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em salary}]The salary of the employee \item[{\em name}]The name of the employee as a dynamically-allocated C string \item[{\em dept}]The name of the department of the employee as a dynamically-allocated C string \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the new Employee created \end{Desc}
+\index{struct.h@{struct.h}!employeeInfo@{employeeInfo}}
+\index{employeeInfo@{employeeInfo}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee}$\ast$ employee\-Info (FILE $\ast$ {\em data})}\label{struct_8h_d1dec782f287f497cd0aa38952408134}
+
+
+Read the information of an employee on a file and create the employee \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]The file to read from \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The created employee with the information read from the file \end{Desc}
+\index{struct.h@{struct.h}!getEmployeeInfo@{getEmployeeInfo}}
+\index{getEmployeeInfo@{getEmployeeInfo}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee}$\ast$ get\-Employee\-Info (int {\em name\-Size}, int {\em dept\-Size}, int {\em sal\-Size})}\label{struct_8h_88c3438b462401d8f0849705bb085823}
+
+
+Prompt the user to enter an Employee's information then create and print out a new employee with the entered information \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name\-Size}]The maximum number of characters that can be entered for name \item[{\em dept\-Size}]The maximum number of characters that can be entered for department \item[{\em sal\-Size}]The maximum number of digits that can be entered for salary \end{description}
+\end{Desc}
+\index{struct.h@{struct.h}!numberOfEmp@{numberOfEmp}}
+\index{numberOfEmp@{numberOfEmp}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int number\-Of\-Emp ()}\label{struct_8h_d780e2a0cc7c9df2861e5f5fd1742fa9}
+
+
+Prompts the user to enter the number of employee and return that value \begin{Desc}
+\item[Returns:]The number of employee entered in the command line \end{Desc}
+\index{struct.h@{struct.h}!outputEmployee@{outputEmployee}}
+\index{outputEmployee@{outputEmployee}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void output\-Employee (FILE $\ast$ {\em stream}, \bf{Employee} $\ast$ {\em employee})}\label{struct_8h_106ec703689a1f0249d6f598df15fd93}
+
+
+Prints the contents of an Employee struct to a stream, such as an already-opened file. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stream}]A pointer to a FILE struct representing an already-open stream, such as stdout, stderr, or a file. \item[{\em employee}]Pointer to the Employee struct to print \end{description}
+\end{Desc}
+\index{struct.h@{struct.h}!printEmployee@{printEmployee}}
+\index{printEmployee@{printEmployee}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\-Employee (\bf{Employee} $\ast$ {\em employee})}\label{struct_8h_a28c4b8e4929dadc3d00cd55a2469e60}
+
+
+Prints the contents of an Employee struct to standard output. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em employee}]Pointer to the Employee struct to print \end{description}
+\end{Desc}
+\index{struct.h@{struct.h}!readEmpFromBin@{readEmpFromBin}}
+\index{readEmpFromBin@{readEmpFromBin}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void read\-Emp\-From\-Bin (int {\em pathname})}\label{struct_8h_b25b7aa9c6b7f289193249ea7b888fb9}
+
+
+Read the information of an employee on a binary file and print out the employee \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pathname}]The file to read from \end{description}
+\end{Desc}
+\index{struct.h@{struct.h}!writeEmpDataToBinaryFile@{writeEmpDataToBinaryFile}}
+\index{writeEmpDataToBinaryFile@{writeEmpDataToBinaryFile}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void write\-Emp\-Data\-To\-Binary\-File (int {\em pathname}, \bf{Employee} $\ast$ {\em employee})}\label{struct_8h_58744171738d60fc2d2f0cfda2350f12}
+
+
+Prints the contents of an Employee struct to a binary file, such as an already-opened file with each piece of data on a separate line \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stream}]A pointer to a FILE struct representing an already-open stream, such as stdout, stderr, or a file. \item[{\em employee}]Pointer to the Employee struct to print \end{description}
+\end{Desc}
+\index{struct.h@{struct.h}!writeEmpDataToFile@{writeEmpDataToFile}}
+\index{writeEmpDataToFile@{writeEmpDataToFile}!struct.h@{struct.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void write\-Emp\-Data\-To\-File (FILE $\ast$ {\em stream}, \bf{Employee} $\ast$ {\em employee})}\label{struct_8h_d234119b28ad4ab9888a754b8b469994}
+
+
+Prints the contents of an Employee struct to a stream, such as an already-opened file with each piece of data on a separate line \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stream}]A pointer to a FILE struct representing an already-open stream, such as stdout, stderr, or a file. \item[{\em employee}]Pointer to the Employee struct to print \end{description}
+\end{Desc}
